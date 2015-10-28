@@ -1,0 +1,318 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ctex-article
+\begin_preamble
+\usepackage{xeCJK}
+
+\setCJKmainfont{SimSun} 
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize b5paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1.5cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\secnumdepth -2
+\tocdepth -2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 1
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+【数据处理】
+\end_layout
+
+\begin_layout Standard
+由Gibbs吸附方程和Langmur等温式可以得出
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma_{\infty}\frac{Kc}{1+Kc}=-\frac{c}{RT}(\frac{d\sigma}{dc})_{r}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+显然本实验中
+\begin_inset Formula $r$
+\end_inset
+
+为定值，故有
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d\sigma=-RT\Gamma_{\infty}\cdot\frac{K}{1+Kc}dc
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+可知
+\begin_inset Formula $\sigma$
+\end_inset
+
+和
+\begin_inset Formula $c$
+\end_inset
+
+的关系为
+\begin_inset Formula 
+\begin{equation}
+\sigma=-\Gamma_{\infty}RT\,log(1+Kc)+C_{1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+其中
+\begin_inset Formula $R$
+\end_inset
+
+为普适气体恒量，
+\begin_inset Formula $T$
+\end_inset
+
+为温度，
+\begin_inset Formula $K$
+\end_inset
+
+为Langmur等温式中的常数，
+\begin_inset Formula $C_{1}$
+\end_inset
+
+为常数，
+\begin_inset Formula $c$
+\end_inset
+
+为溶液浓度，
+\begin_inset Formula $\text{\Gamma}_{\infty}$
+\end_inset
+
+为饱和吸附量。
+\end_layout
+
+\begin_layout Standard
+令方程
+\begin_inset Formula $y=A\,log(B+x)+C$
+\end_inset
+
+对
+\begin_inset Formula $\sigma$
+\end_inset
+
+和
+\begin_inset Formula $c$
+\end_inset
+
+进行拟合，得到方程为
+\begin_inset Formula $y=-0.016\,log(0.040+x)+0.020$
+\end_inset
+
+，并作
+\begin_inset Formula $\text{\sigma}-c$
+\end_inset
+
+图如下
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename C:/Users/CJT-6220/figure_0.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+显然，此处的拟合常数
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, 
+\begin_inset Formula $C$
+\end_inset
+
+和(1)式中的物理常数对应关系为：
+\begin_inset Formula $A=-\Gamma_{\infty}RT$
+\end_inset
+
+，
+\begin_inset Formula $B=\frac{1}{K}$
+\end_inset
+
+，
+\begin_inset Formula $C=C_{1}+Alog(\frac{1}{K})$
+\end_inset
+
+，因此代入
+\begin_inset Formula $RT$
+\end_inset
+
+即可求出
+\begin_inset Formula $\Gamma_{\infty}=6.35\times10^{-6}mol\cdot m^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对图上各点求导，代入
+\begin_inset Formula $\Gamma=-\frac{c}{RT}(\frac{d\sigma}{dc})$
+\end_inset
+
+并对
+\begin_inset Formula $\frac{c}{\Gamma}-c$
+\end_inset
+
+作图，可求得斜率为
+\begin_inset Formula $\frac{d\Gamma}{dc}=157482.399546$
+\end_inset
+
+，也可以求得
+\begin_inset Formula $\Gamma_{\infty}=6.35\times10^{-6}mol\cdot m^{-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename C:/Users/CJT-6220/figure_1.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+代入数据求出丁醇分子的横截面积
+\begin_inset Formula $q=1/(\Gamma_{\infty}N_{A})=2.62\text{\times}10^{-19}m^{2}$
+\end_inset
+
+，查表可得正丁醇在
+\begin_inset Formula $30\,^{\circ}{\rm C}$
+\end_inset
+
+时的密度为
+\begin_inset Formula $0.8085\,g\cdot cm^{-3}$
+\end_inset
+
+，相对分子质量为74.12，这样可以求得正丁醇的分子长度为
+\begin_inset Formula $\delta=\frac{\Gamma_{\infty}\cdot M_{r}}{\rho}=5.82\times10^{-10}m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+【结果分析】
+\end_layout
+
+\begin_layout Standard
+丁醇分子截面积的文献值约在
+\begin_inset Formula $(2.4\sim3.2\text{)}\times10^{-19}m^{2}$
+\end_inset
+
+范围内，故实验还是比较准确的。也有文献表示更加精密的横截面积大约在
+\begin_inset Formula $(2.74\sim2.89\text{)}\times10^{-19}m^{2}$
+\end_inset
+
+范围内（《胶体化学》p77，北京大学出版社，1961），由此看来数据还是略有偏差、不够精密，不过尚在合理范围内。控制不漏气和毛细管与液面相切是实验准确度高的基本
+前提。
+\end_layout
+
+\begin_layout Standard
+在实验过程中，观察到试管难以保持竖直，且毛细管受橡皮塞影响难以与液面保持垂直，故应当适当调整仪器姿态使得毛细管管口大致位于试管横截面中心，并在加注液体时沿着器壁
+缓慢加入，如此可以保证毛细管管口和液面相切。
+\end_layout
+
+\begin_layout Standard
+误差来源可能包括溶液配制过程中的误差、仪器的误差和读数的误差。因为实验用到的是示数跳动的电子气压计而非连续变化的双液面压力计，故示数也可能存在不准确的情况。
+\end_layout
+
+\end_body
+\end_document

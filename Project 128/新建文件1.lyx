@@ -1,0 +1,471 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+
+\usepackage{xeCJK}
+
+\setCJKmainfont{SimSun} 
+\end_preamble
+\options UTF8,adobefonts
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize b5paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1.5cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 1
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+【数据处理】
+\end_layout
+
+\begin_layout Standard
+测量时使氢氧化铁溶胶界面下降
+\begin_inset Formula $5mm$
+\end_inset
+
+，再交换正负极使其上升
+\begin_inset Formula $5mm$
+\end_inset
+
+，共测量十次
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="7">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+序号
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+平均值
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+下降所用时间
+\begin_inset Formula $(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+302.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+379.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+415.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+445.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+490.11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+406.38
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+上升所用时间
+\begin_inset Formula $(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+459.11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+657.24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+931.11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+924.17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+946.63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+783.69
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+环境温度为
+\begin_inset Formula $14.0\,^{\circ}{\rm C}\,(287.15K)$
+\end_inset
+
+，假设电泳时所用的辅助液的性质与纯水相同，则根据水粘度近似公式
+\begin_inset Formula $^{[1][2]}$
+\end_inset
+
+
+\begin_inset Formula $\eta=2.414\times10^{-5}\times10^{\frac{247.8}{T-140}}$
+\end_inset
+
+可以计算出水的粘度为
+\begin_inset Formula $\eta=1.166\times10^{-3}\,Pa\cdot s$
+\end_inset
+
+，根据文献
+\begin_inset Formula $^{[3]}$
+\end_inset
+
+中的近似公式可知此时水的介电常数
+\begin_inset Formula $D=82.31$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+将测量所得数据和电极间的距离
+\begin_inset Formula $l=18.5\,cm$
+\end_inset
+
+代入公式
+\begin_inset Formula 
+\[
+\zeta=\frac{4\pi\eta sl}{DVt}300^{2}\,(V)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于下降组数据可以求出
+\begin_inset Formula $\zeta_{down}=+9.12\times10^{-3}\text{\,}V$
+\end_inset
+
+，对于上升组数据可以求出
+\begin_inset Formula $\zeta_{up}=+4.73\times10^{-3}\,V$
+\end_inset
+
+，取平均值为
+\begin_inset Formula $\zeta=+6.92\times10^{-3}\,V$
+\end_inset
+
+，与文献值
+\begin_inset Formula $\zeta=+44\times10^{-3}\,V$
+\end_inset
+
+相去甚远，可能的原因包括但不限于：1.电极间距离测量的误差；2.辅助液的粘度和介电常数与水之间的差异；3.观察界面高度时的读数误差；4.界面运动与单个胶粒本身的运动间关
+系不明确；5.胶体的制备方法与文献中方法不一致；
+\end_layout
+
+\begin_layout Standard
+根据文献
+\begin_inset Formula $^{[4]}$
+\end_inset
+
+，不同方法和pH下，不同体系制备的氢氧化铁胶体的
+\begin_inset Formula $\text{\zeta}$
+\end_inset
+
+电位不尽相同，因此对于实验所得的测量值无法评价其数据的准确程度。
+\end_layout
+
+\begin_layout Standard
+此外，从数据中可以发现下降所需的时间小于上升所需的时间，原因有待于研究。
+\end_layout
+
+\begin_layout Standard
+【引用】
+\end_layout
+
+\begin_layout Standard
+[1]
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.as-1.co.jp/academy/24/24-2.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[2]
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://zh.wikipedia.org/wiki/%E9%BB%8F%E5%BA%A6#.E6.B0.B4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[3]
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://nvlpubs.nist.gov/nistpubs/jres/56/jresv56n1p1_A1b.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[4]
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://link.springer.com/article/10.1007%2FBF00351560
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

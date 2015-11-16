@@ -1,0 +1,103 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass{ctexart}
+\usepackage[T1]{fontenc}
+\usepackage[b5paper]{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1.5cm,lmargin=1cm,rmargin=1cm}
+\setcounter{secnumdepth}{-2}
+\setcounter{tocdepth}{-2}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{amstext}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{xeCJK}
+
+\setCJKmainfont{SimSun} 
+
+%\usepackage{pgfplots}
+%\usepackage{pgfplotstable}
+%\pgfplotsset{compat=1.12}
+%\usepackage{booktabs}
+\usepackage{diagbox}
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+
+\makeatother
+
+\begin{document}
+\noindent 
+\begin{table}
+\caption{用表格列出原始溶液的浓度、加入溶剂的体积、各溶液的浓度（g/100mL溶液）、流经毛细管的时间和时间平均值、以及计算值$\eta_{r}$、$\eta_{sp}$、$\frac{\eta_{sp}}{c}$、$\frac{ln(\eta_{r})}{c}$。}
+
+
+\noindent %
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+\multicolumn{2}{|c|}{\multirow{2}*{\diagbox{项目}{溶液}}}  & \multicolumn{5}{c|}{聚乙烯醇溶液($12.00\,mL$, 浓度$6.0\,g\cdot L^{-1}$)} & \multirow{2}{*}{\tabincell{c}{溶剂(正丁醇水溶液\\$2.0\,mol \cdot L^{-1}$)}}\tabularnewline
+\cline{3-7} 
+  \multicolumn{2}{|c|}{} & 1 & 2 & 3 & 4 & 5 & \tabularnewline
+\hline 
+\multicolumn{2}{|c|}{加入溶剂体积($mL$)} & $0.0$ & $3.0$ & $5.0$ & $5.0$ & $5.0$ & --\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{浓度($g\cdot(100mL)^{-1}$)} & 0.600 & 0.480 & 0.360 & 0.288 & 0.240 & --\tabularnewline
+\hline 
+\multirow{3}{*}{\tabincell{c}{流经毛细管\\所用时间($s$)}} & 1 & 129.91 & 117.94 & 106.72 & 100.88 & 97.09 & 79.44\tabularnewline
+\cline{2-8} 
+ & 2 & 129.72 & 117.62 & 106.76 & 100.78 & 96.97 & 79.63\tabularnewline
+\cline{2-8} 
+ & 3 & 129.90 & 118.00 & 106.96 & 100.70 & 96.88 & 79.69\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{平均流经时间($s$)} & 129.843 & 117.853 & 106.813 & 100.787 & 96.98 & 79.667\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{$\text{\ensuremath{\eta}}_{r}$} & 1.633 & 1.482 & 1.344 & 1.268 & 1.220 & --\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{$\text{\ensuremath{\eta}}_{sp}$} & 0.633 & 0.482 & 0.344 & 0.268 & 0.220 & --\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{$\frac{ln(\eta_{r})}{c}$} & 105.45 & 100.51 & 95.433 & 92.973 & 91.614 & --\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{$\frac{\eta_{sp}}{c}$} & 81.706 & 82.017 & 82.034 & 82.379 & 82.811 & --\tabularnewline
+\hline 
+\end{tabular}
+\end{table}
+
+
+作$\frac{\eta_{sp}}{c}-c$, $\frac{ln(\eta_{r})}{c}-c$图，并外推求$\left[\eta\right]$
+
+\noindent \begin{center}
+\includegraphics[clip,width=0.8\paperwidth]{C:/Users/CJT-6220/Desktop/figure_0-2}
+\par\end{center}
+
+拟合得到函数如上图所示，可以求得交点$x=3.32\times 10^{-4}\text{\,}g\cdot mL^{-1}$，$[\eta]=83.13$。求得
+
+\noindent \begin{center}
+$\bar{M}=\sqrt[\alpha]{\frac {[\eta]}{K}}=\sqrt[0.76]{\frac {83.13}{2.0\times 10^{-2}}}=57740$
+\par\end{center}
+
+显然两线并不交于y轴，具体原因可能包括实验引入的系统误差和随机误差。\clearpage
+
+【结果分析】
+
+两条线并未能交于y轴，最可能的原因可能是因为测量时由于恒温槽深度不足，视线不能与刻度线平齐，而引入的系统误差，计时引入的随机误差也是重要的因素，可以通过换用更深的水槽及引入高速摄像机或针对液面高度设计的测量工具来实现对时间的准确测量。
+
+实验中所存在的易于通过测量和计算校正的系统误差包括动能修正和密度差异的修正，根据文献（粘度法测定高聚物相对分子质量，钱人元等，《化学通报》，1955）中所述，相对粘度的计算应为
+\[
+\eta_{r}=\frac{\rho\text{\,}t}{\rho_{0\text{\,}}t_{0}}[1+\frac{B}{A}\,(\frac{1}{t_{0}^{2}}-\frac{1}{t^{2}})\,]
+\]
+
+
+其中$A$，$B$分别为Poiseuille定律中与仪器有关的部分，当$t$与$t_{0}$都比较大且$\text{\ensuremath{\rho}}$和$\rho_{0}$相接近时有$\eta_{r}=\frac{t}{t_{0}}$。后者因为溶液极稀认为可以满足，而$t_{0}$在本实验中约为$80\,s$，小于实验教材中的$100\,s$的下限，故存在一定的误差，但是修正值的大小取决于仪器本身，并非通过上述数据可以解决。
+
+不易校正的误差包括流出体积前后不一的校正和表面张力的校正，但是根据文献所述都可以在初步近似中忽略。
+
+此外，所用的两个近似公式$\frac{\eta_{sp}}{c}=[\eta]+k[\eta]^{2}c$和$\frac{ln(\eta_{c})}{c}=[\eta]-\beta[\eta]^{2}c$均为经验公式，也存在一定的误差，文献中所记载的相对误差估计值为1\%(当$\eta_{r}$在110\textasciitilde{}200之间时)。
+\end{document}

@@ -1,0 +1,124 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass{ctexart}
+\usepackage[T1]{fontenc}
+\usepackage[b5paper]{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1.5cm,lmargin=1cm,rmargin=1cm}
+\setcounter{secnumdepth}{-2}
+\setcounter{tocdepth}{-2}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{xeCJK}
+
+\setCJKmainfont{SimSun} 
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{booktabs}
+\usepackage{diagbox}
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\makeatother
+
+\begin{document}
+\section{数据处理}
+\noindent 
+\begin{wraptable}{I}{0.48\textwidth}%
+\noindent \begin{centering}
+\caption{电流密度$i$，log$i$，阴极电位$\varphi$}
+
+\par\end{centering}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\tabincell{c}{电流值\\( $mA$ )} & \tabincell{c}{电流密度 $i$\\$(mA/cm^2)$} & log $i$ & \tabincell{c}{电极电势\\($V$,vs.SCE)}\tabularnewline
+\hline 
+\hline 
+100 & 200 & -1.609 & 1.2036\tabularnewline
+\hline 
+50 & 100 & -2.303 & 1.0599\tabularnewline
+\hline 
+20 & 40 & -3.219 & 0.9003\tabularnewline
+\hline 
+10 & 20 & -3.912 & 0.8013\tabularnewline
+\hline 
+5 & 10 & -4.605 & 0.7366\tabularnewline
+\hline 
+2 & 4 & -5.521 & 0.6883\tabularnewline
+\hline 
+1 & 2 & -6.215 & 0.6694\tabularnewline
+\hline 
+0.5 & 1 & -6.908 & 0.6437\tabularnewline
+\hline 
+0.2 & 0.4 & -7.824 & 0.6158\tabularnewline
+\hline 
+0.1 & 0.2 & -8.517 & 0.5960\tabularnewline
+\hline 
+0.05 & 0.1 & -9.210 & 0.5843\tabularnewline
+\hline 
+0.02 & 0.04 & -10.127 & 0.5742\tabularnewline
+\hline 
+0.01 & 0.02 & -10.820 & 0.5682\tabularnewline
+\hline 
+0.005 & 0.01 & -11.513 & 0.5606\tabularnewline
+\hline 
+0.002 & 0.004 & -12.429 & 0.5581\tabularnewline
+\hline 
+\end{tabular}\end{wraptable}%
+ 
+\par
+
+阴极面积为$0.5cm^{2}$,将电流值，电流密度，电极电势等列表如左，并令拟合方程为
+
+\[
+y=\begin{cases}
+a_{1}+b_{1}\,log\,i & log\,i<p\\
+a_{2}+b_{2}\,log\,i & log\,i\geqq p
+\end{cases}\ where\ p=-\frac{a_{1}-a_{2}}{b_{1}-b_{2}}
+\]
+
+
+且残差和最小，则可以得到方程为
+
+\[
+y=\begin{cases}
+0.0222\,log\,i+0.8066 & log\,i<-4.38\text{（低极化区）}\\
+0.1746\,log\,i+1.4736 & log\,i\geqq-4.38\text{（高极化区）}
+\end{cases}
+\]
+
+
+则可得两个Tafel方程的常数为
+\[
+a_{1}=0.8066.\ b_{1}=0.8066
+\]
+\[
+a_{2}=1.4736,\ b_{2}=0.0222
+\]
+
+作图如下：
+\\
+\\
+\\
+\\
+
+\noindent \begin{center}
+\includegraphics[clip,width=0.8\paperwidth]{C:/Users/CJT-6220/Desktop/figure_1-2}
+\par\end{center}
+
+\section{结果分析}
+Tafel关系常数的理论值由Butler{}-Volmer关系决定，但是由于金属间的差异与电荷转移系数的区别，故Tafel关系中的常数均为经验值，故不知准确性如何。但方程本身线性拟合度不算高（$R^2=0.9933$），可知测得数据准确性不好。可能的原因包括示数跳动时读数的偶然误差和电流值不稳定即读数的差值等。\\
+
+根据Butler{}-Volmer关系可知，$\varphi$较小的时候，$\varphi$与$i$近于线性关系，这也有可能是拟合时的误差来源。
+
+\end{document}

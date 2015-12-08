@@ -5,17 +5,17 @@ import scipy.misc
 import pylab
 from matplotlib.font_manager import FontProperties
 
-Solvent_Time = 104.43
+Solvent_Time = 105.89
 Data = sorted([
-	#(0.006, 174.00),
-	(0.006*12/15.0, 154.66),
-	(0.006*12/20.0, 140.06),
-	(0.006*12/25.0, 132.16),
-	(0.006*12/30.0, 126.69)
+	(0.006,              178.51),
+	(0.006*12/15.0, 160.61),
+	(0.006*12/20.0, 143.46),
+	(0.006*12/25.0, 134.35),
+	(0.006*12/30.0, 129.27)
 ], key = lambda x:x[1], reverse=True)
 
 R2 = lambda y, y_guess: (lambda y, y_guess: 1-(((y-y_guess)**2).sum())/(((y-y.mean())**2).sum()))(*map(numpy.array, (y, y_guess)))
-_ = lambda a:map(str, list(a))
+_ = lambda a:map(lambda x:'%.3f'%x, list(a))
 
 def Data_Fitting(Data, Solvent_Time):
 	Sort_Data = sorted(Data, key = lambda x:x[1], reverse=True)
@@ -24,10 +24,10 @@ def Data_Fitting(Data, Solvent_Time):
 	eta_sp = map(lambda y: y-1, eta_r)
 	eta_sp_div_c, ln_eta_r_div_c = map(lambda x, y:y/x, c, eta_sp), map(lambda x, y:numpy.log(y)/x, c, eta_r)
 	
-	print "eta_r list is: \n", "\t".join(_(eta_r))
-	print "eta_sp list is: \n", "\t".join(_(eta_sp))
-	print "eta_sp/c list is: \n", "\t".join(_(eta_sp_div_c))
-	print "ln(eta_r)/c list is: \n", "\t".join(_(ln_eta_r_div_c))
+	print "eta_r list is: \n", " & ".join(_(eta_r))
+	print "eta_sp list is: \n", " & ".join(_(eta_sp))
+	print "eta_sp/c list is: \n", " & ".join(_(eta_sp_div_c))
+	print "ln(eta_r)/c list is: \n", " & ".join(_(ln_eta_r_div_c))
 	
 	return c, eta_sp_div_c, ln_eta_r_div_c
 
@@ -93,11 +93,11 @@ plt.legend(loc=7, bbox_transform=plt.gcf().transFigure, fontsize=24)
 
 CF = FontProperties(fname='C:\\Windows\\Fonts\\msyh.ttc')
 
-plt.text(K[0][2], K[1][2]+3, "$R^{2}=%.4f$"%R2(K[1], map(z1, K[0])), fontsize=20)
-plt.text(K[0][2], K[2][2]+3, "$R^{2}=%.4f$"%R2(K[2], map(z2, K[0])), fontsize=20)
+plt.text(K[0][3]-0.001, K[1][3]+1, "$R^{2}=%.4f$"%R2(K[1], map(z1, K[0])), fontsize=20)
+plt.text(K[0][3]-0.001, K[2][3]-15, "$R^{2}=%.4f$"%R2(K[2], map(z2, K[0])), fontsize=20)
 
-plt.text(K[0][2], K[1][2]+5, "$y_{1}=%.2fx+%.2f$"%(L1[0], L1[1]), fontsize=20)
-plt.text(K[0][2], K[2][2]+5, "$y_{2}=%.2fx+%.2f$"%(L2[0], L2[1]), fontsize=20)
+plt.text(K[0][3]-0.001, K[1][3]+5, "$y_{1}=%.2fx+%.2f$"%(L1[0], L1[1]), fontsize=20)
+plt.text(K[0][3]-0.001, K[2][3]-11, "$y_{2}=%.2fx+%.2f$"%(L2[0], L2[1]), fontsize=20)
 plt.xlabel(u"浓度$(g/mL)$", fontproperties=CF, fontsize=20)
 plt.ylabel(u"$\\frac{\eta_{sp}}{c}$ or $\\frac{ln(\eta_{r})}{c}$", fontproperties=CF, fontsize=20)
 plt.title(u"$\\frac{\eta_{sp}}{c}/\\frac{ln(\eta_{r})}{c}-c$图", fontproperties=CF, fontsize=24)
